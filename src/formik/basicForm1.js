@@ -5,7 +5,7 @@ import './basicForm.scss'
 const Basic = () => {
     return (
         <div className='basicFormik'>
-            <h2>New form</h2>
+            <h2>New form 1</h2>
             <Formik
                 initialValues={{
                     email: '',
