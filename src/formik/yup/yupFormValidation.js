@@ -2,7 +2,7 @@ import React from 'react';
 import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
 
-import './basicForm.scss'
+import '../basicForm.scss'
 
 //Formik has a special config option / prop for Yup called validationSchema which will automatically
 // transform Yup's validation errors into a pretty object whose keys match values and touched
@@ -22,9 +22,9 @@ const SignupSchema = Yup.object().shape({
         .required('Required'),
 });
 
-export const ValidationSchemaExample = () => (
+const ValidationSchemaExample = () => (
     <div className='basicFormik'>
-        <h1>Signup</h1>
+        <h1>ValidationSchemaExample</h1>
         <Formik
             initialValues={{
                 firstName: '',
